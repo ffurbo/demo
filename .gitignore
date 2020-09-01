@@ -27,3 +27,6 @@
 npm-debug.log
 yarn-error.log
 ###< symfony/webpack-encore-bundle ###
+
+/docker/_host-volumes/pma/*
+/docker/_host-volumes/data/*

@@ -1,3 +1,14 @@
+
+docker-compose up -d
+
+in the apache-php container:
+
+composer install
+php bin/console doctrine:database:create
+php bin/console make:migration (migration already generated)
+php bin/console doctrine:migrations:migrate
+php bin/console doctrine:fixtures:load
+
 Symfony Demo Application
 ========================
 
