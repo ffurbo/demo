@@ -1,13 +1,24 @@
+Docker env with apache, mariadb and phpmyadmin
+======================================
 
 docker-compose up -d
 
 in the apache-php container:
 
-composer install
-php bin/console doctrine:database:create
-php bin/console make:migration (migration already generated)
-php bin/console doctrine:migrations:migrate
-php bin/console doctrine:fixtures:load
+cd /project
+composer install\
+php bin/console doctrine:database:create\
+php bin/console make:migration (migration already generated)\
+php bin/console doctrine:migrations:migrate\
+php bin/console doctrine:fixtures:load\
+chmod -R 777 var/\
+
+http://localhost:80 - symfony demo\
+http://localhost:8080 - phpmyadmin
+
+db login: root
+db password: example
+
 
 Symfony Demo Application
 ========================
