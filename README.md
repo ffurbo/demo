@@ -16,7 +16,7 @@ chmod -R 777 var/
 http://localhost:80 - symfony demo\
 http://localhost:8080 - phpmyadmin
 
-db login: root
+db login: root\
 db password: example
 
 
